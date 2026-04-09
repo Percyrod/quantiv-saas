@@ -27,6 +27,10 @@ export default function AppShell({ children, userName }: { children: React.React
           <Link href="/sim/new" className="btn-run" style={{ padding: '5px 14px', fontSize: 12, textDecoration: 'none' }}>
             + Nueva simulación
           </Link>
+          <Link href="/reset-password"
+            style={{ color: 'rgba(255,255,255,.55)', fontSize: 11, textDecoration: 'none' }}>
+            Cambiar contraseña
+          </Link>
           <button className="btn-ghost" onClick={handleLogout}
             style={{ color: 'rgba(255,255,255,.7)', borderColor: 'rgba(255,255,255,.25)', background: 'transparent', padding: '5px 12px', fontSize: 12 }}>
             Salir
