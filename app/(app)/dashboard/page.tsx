@@ -46,7 +46,7 @@ export default async function DashboardPage() {
       ) : (
         <div className="dash-grid">
           {sims.map(sim => {
-            const p = sim.params as Record<string, unknown>;
+            const p = (sim.params ?? {}) as Record<string, string | number>;
             const date = new Date(sim.created_at).toLocaleDateString('es-PE', {
               day: '2-digit', month: 'short', year: 'numeric'
             });
